@@ -62,6 +62,22 @@ source ~/.zshrc
 # Watchman (recommended for React Native by Facebook)
 brew update
 brew install watchman
+echo fs.inotify.max_user_watches=582222 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+echo -e '{
+  "min_acceptable_nice_value": 8
+}
+' > /etc/watchman.json
 
 # React Native / Expo
 npm install -g eas-cli
+
+
+# Jekyll
+
+sudo apt-get install ruby-full build-essential zlib1g-dev
+
+echo '# Install Ruby Gems to ~/gems' >> ~/.zshrc
+echo 'export GEM_HOME="$HOME/gems"' >> ~/.zshrc
+echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+gem install jekyll bundler
