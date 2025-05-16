@@ -1,0 +1,23 @@
+{
+    "files.autoSave": "afterDelay",
+    "github.copilot.editor.enableAutoCompletions": true,
+    "redhat.telemetry.enabled": false,
+    "editor.wrappingIndent": "deepIndent",
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 120,
+    "git.autofetch": true,
+    "cSpell.userWords": [
+        "callouts",
+        "coredns",
+        "hostnames",
+        "jsonencode",
+        "Pressable"
+    ],
+    "editor.tabSize": 2,
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.editor.wrapTabs": true,
+    "editor.minimap.enabled": false,
+    "terminal.integrated.scrollback": 4000,
+    "terminal.integrated.persistentSessionScrollback": 1000,
+    "workbench.editor.pinnedTabSizing": "shrink"
+}
